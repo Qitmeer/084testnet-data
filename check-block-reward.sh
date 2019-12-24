@@ -20,13 +20,15 @@ if [ -z $1 ]; then
 fi
 
 function valid_block() {
-  cat $DATA|grep true|grep ,1$
+  cat $DATA|grep cuckaroo|grep true|grep ,1$
 }
 
 function invalid_block() {
-  cat $DATA|grep false
-  cat $DATA|grep true|grep ,0$
-  cat $DATA|grep true|grep ,2$
+  cat $DATA|grep cuckatoo
+  cat $DATA|grep blake2bd
+  cat $DATA|grep cuckaroo|grep false
+  cat $DATA|grep cuckaroo|grep true|grep ,0$
+  cat $DATA|grep cuckaroo|grep true|grep ,2$
 }
 
 if [ "$1" == "-l" ]; then

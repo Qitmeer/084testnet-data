@@ -1,7 +1,9 @@
 # 084testnet-data
 The Qitmeer 0.8.4 testnet data backup for the reward verification.
 
-For block order from `1` to `40651` ( `03cc1f2ffc5a91d877206c03545d60dd5b87a03c491e61362d661286b64b2209` at `2019-12-23_11:59:54_CST`), we look up every miner address, check if its minded block is valid ( `txvalid=true && isBlue==1`) and calulate the count of its all valid block (the `block_count`), the reward for the address is `(block_count%20) * 65` PMEER. 
+For block order from `1` to `40651` ( `03cc1f2ffc5a91d877206c03545d60dd5b87a03c491e61362d661286b64b2209` at `2019-12-23_11:59:54_CST`),
+we look up every miner address, check if its minded block is valid ( `pow=cuckaroo && txvalid=true && isBlue==1`) and calulate the count of
+its all valid block (the `block_count`), the reward for the address is `(block_count%20) * 65` PMEER.
 
 ## All rewards & reward ranking 
 
