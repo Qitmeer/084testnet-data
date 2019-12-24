@@ -13,3 +13,10 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+testnet
+build
+qitmeer-0.8.4-darwin-amd64.tar.gz
+qitmeer
+*.bak
+cli.sh
